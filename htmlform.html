@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="htmlform.css">
+</head>
+<body>
+    <div id="body">
+    <div style="width: 600px;">
+        <div id="header">
+            <h1 id="title">Create Account</h1>
+        </div>
+        <div id="form">
+            <form action="">
+                <div style="flex-direction: row; ">
+                <div>
+                    <label id="label" for="name1" class="left" >Firstname*</label>
+                    <label for="name2"   id="label">Lastname</label>
+                </div>
+                <div>
+                    <input type="text" id="name1" placeholder="enter your firstname" class="left" required>
+                    <input type="text" id="name2" placeholder="enter your lastname">
+                </div><br>
+                <div><label for="email" id="label" class="left">Email*</label></div>
+                <div><input type="email" id="email" value="" placeholder="enter your email" class="left" ></div><br>
+                <div>
+                    <label for="password" class="left" id="label">Password*</label>
+                    <label for="confirmedpass" id="label">Confirm Password*</label>
+                </div>
+                <div>
+                    <input type="password" id="password" class="left" placeholder="enter password" required>
+                    <input type="password" id="confirmedpass" placeholder="enter your password again" required>
+                </div><br>
+                <div>
+                    <label for="" id="label" class="left">Gender:</label>
+                    <label for="hobbies" id="label" class="hob">Hobbies:</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" name="gender" value="male" id="male" class="left">
+                    <label for="male" style="color: rgb(78, 76, 76); font-weight: bold;">  Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female" style="color: rgb(78, 76, 76); font-weight: bold; margin-right: 106px;">Female</label>
+                    <input type="checkbox" value="sports"
+                    name="hobby" id="sports">
+                    <label for="sports" style="color: rgb(78, 76, 76); font-weight: bold; margin-right: 3px; ">Sports</label>
+                    <input type="checkbox" name="hobby" id="travel" value="Travelling">
+                    <label for="travel" style="color: rgb(78, 76, 76); font-weight: bold; margin-right: 3px;">Travelling</label>
+                    <input type="checkbox" name="hobby" id="music" value="music">
+                    <label for="music" style="color: rgb(78, 76, 76); font-weight: bold; margin-right: 3px;">Music</label>
+                    <input type="checkbox" name="hobby" id="movies" value="movies">
+                    <label for="movies" style="color: rgb(78, 76, 76); font-weight: bold; margin-right: 3px;">Movies</label>
+                </div><br>
+                <div>
+                    <label style="margin-right: 102px;" for="" id="label" class="left">Source Of Income</label>
+                    <label for="income" id="label">Income(in naira)</label>
+                </div>
+                <div>
+                    <input id="source" type="text" list="SOI" placeholder="Source of income" class="left">
+                    <datalist id="SOI">
+                        <option value="Employed">Employed</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Self-Employed">Self-Employed</option>
+                    </datalist>
+                    <input type="range" id="income" min="5000" max="1000000" 
+                    step="1000"
+                    value="5000">
+                    <span id="rangeValue">5000</span>
+                </div><br>
+                <div>
+                    <label for="age" class="age" id="label">Age:</label>
+                    <input type="number" id="age">
+                </div><br>
+                <div>
+                    <label for="bio" id="label" class="left">Bio:</label>
+                    <textarea name="bio" id="" cols="30" rows="5" class="left" placeholder="Tell us about yourself"></textarea>
+                </div><br>
+                <div id="submit">
+                <input type="submit" value="CREATE">
+                </div>
+            </div>
+            </form>
+        
+    </div>
+    <script src="htmlform.js"></script>
+    </div>
+</div>
+</body>
+</html>
